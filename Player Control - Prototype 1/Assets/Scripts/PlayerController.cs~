@@ -1,0 +1,18 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerController : MonoBehaviour {
+	public float speed = 15; // 20 is too fast.
+
+	// Start is called before the first frame update
+	void Start() {
+		// Unused, for now.
+	}
+
+	// Update is called once per frame
+	void Update() {
+		// I'll most likely _only_ use this for movement, once each frame.
+		transform.Translate(Vector3.forward * Time.deltaTime * speed);
+	}
+}
